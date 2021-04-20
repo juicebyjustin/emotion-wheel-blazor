@@ -9,8 +9,27 @@
 * CD to Server/BlazorBoilerplate.Storage
 * Set default project to BB.Server
 * Run: `dotnet ef --startup-project ../BlazorBoilerplate.Server/ migrations add Add-Migration -c ApplicationDbContext --verbose --no-build --configuration Debug`
+* Check the migration was created correctly.
+* Run db update command: `dotnet ef --startup-project ../BlazorBoilerplate.Server/ database update -c ApplicationDbContext --verbose --no-build --configuration Debug`
 
+# DB Tables
+## Emotion Category
+* Title
 
+## Emotion
+* Title
+* Emotion Category 
+
+## Session Entry
+* Session
+* Emotion
+* Notes
+
+## Session
+* Date
+* Notes
+
+<hr>
 
 # <img src="https://github.com/enkodellc/blazorboilerplate/blob/master/docs/images/logo-title.png" alt="Blazor Boilerplate" style="max-wdith:100%"/>
 
