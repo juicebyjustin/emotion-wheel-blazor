@@ -1,3 +1,17 @@
+# juicebyjustin
+## Adding new entity object
+* Make a copy of the Todo.cs and rename and modify properties for your new entity object.
+* Run EntityGenerator project.
+* Add new DbSet for entity object to ApplicationDbContext.cs.
+* Add nuget package EFCore.Design to BB.Server project.
+* Build Solution.
+* Open up package manager console
+* CD to Server/BlazorBoilerplate.Storage
+* Set default project to BB.Server
+* Run: `dotnet ef --startup-project ../BlazorBoilerplate.Server/ migrations add Add-Migration -c ApplicationDbContext --verbose --no-build --configuration Debug`
+
+
+
 # <img src="https://github.com/enkodellc/blazorboilerplate/blob/master/docs/images/logo-title.png" alt="Blazor Boilerplate" style="max-wdith:100%"/>
 
 Blazor is a web framework designed to run in the browser on a WebAssembly-based .NET runtime. Blazor Boilerplate aka Blazor Starter Template is a SPA admin template that is able to run both WebAssembly (Core-Hosted) and Server-Side Blazor with a .NET 5.0 Server. Default mode for BB is Server Side. To switch to Webassembly log in as Admin and go to settings. [Read more here](https://blazor-boilerplate.readthedocs.io/en/latest/features/dual_mode_blazor.html)
