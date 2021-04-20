@@ -6,7 +6,7 @@ using BlazorBoilerplate.Infrastructure.Storage.Base;
 namespace BlazorBoilerplate.Infrastructure.Storage.DataModels
 {
     [Permissions(Actions.Delete)]
-    public partial class Todo : BaseAuditableEntity, IAuditable, ISoftDelete
+    public partial class EmotionCategory : BaseAuditableEntity, IAuditable, ISoftDelete
     {
         [Key]
         public long Id { get; set; }
@@ -14,7 +14,5 @@ namespace BlazorBoilerplate.Infrastructure.Storage.DataModels
         [Required(ErrorMessage = "FieldRequired")]
         [MaxLength(128)]
         public string Title { get; set; }
-
-        public bool IsCompleted { get; set; }
     }
 }

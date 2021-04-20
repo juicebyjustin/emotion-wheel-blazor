@@ -25,6 +25,8 @@ namespace BlazorBoilerplate.Storage
         public DbSet<ApiLogItem> ApiLogs { get; set; }
         public DbSet<UserProfile> UserProfiles { get; set; }
         public DbSet<Todo> Todos { get; set; }
+        public DbSet<Emotion> Emotions { get; set; }
+        public DbSet<EmotionCategory> EmotionCategories { get; set; }
         public DbSet<Message> Messages { get; set; }
         private IUserSession _userSession { get; set; }
         public DbSet<DbLog> Logs { get; set; }
